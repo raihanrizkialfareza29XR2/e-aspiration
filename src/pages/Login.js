@@ -36,7 +36,7 @@ function Login() {
                                                 <input id="email" type="email" name="email" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400" placeholder="Kata Sandi" />
                                                 </div>
                                             <div className="relative mt-5">
-                                                <button className="w-full bg-red-500 text-white rounded-md px-2 py-1">Masuk</button>
+                                                <button className="w-full bg-red-500 hover:bg-red-600 text-white rounded-md px-2 py-1">Masuk</button>
                                             </div>
                                         </form>
                                         <div className="relative mt-10 h-px bg-gray-300">
