@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <div>
-        <nav className="bg-red-600 dark:bg-red-700 border-gray-200 px-5 sm:px-36 py-4">
+        <nav className="bg-red-600 dark:bg-red-700 border-gray-200 px-5 sm:px-26 py-4">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
                 <Link to="/" className="flex">
                     <img src="/mpk.png" alt="Brand Logo" className="object-cover w-12 mr-2" />
@@ -22,12 +22,12 @@ function Navbar() {
                 <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
                     <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-semibold">
                         <li>
-                            <Link to="/" className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-red-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</Link>
+                            <Link to="/" className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-red-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Beranda</Link>
                         </li>
                         <li>
-                            <Link to="#" className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-red-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent">About</Link>
+                            <Link to="/about" className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-red-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent">Tentang</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="#" className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-red-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent">Services</Link>
                         </li>
                         <li>
@@ -35,7 +35,7 @@ function Navbar() {
                         </li>
                         <li>
                             <Link to="#" className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-red-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent">Contact</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link to="/login" className="flex items-center justify-center py-2 pr-4 pl-3 text-white hover:bg-red-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent">Login <FaRegArrowAltCircleRight className="ml-2" /></Link>
                         </li>

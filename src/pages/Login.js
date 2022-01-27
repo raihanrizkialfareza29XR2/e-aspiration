@@ -59,7 +59,7 @@ function Login() {
     }
 
     return (
-        <div classNameName="flex flex-col h-screen">
+        <div className="flex flex-col h-screen">
             <SEO
                 lang={"id"}
                 title={"Masuk Akun | MPK Moklet"}
@@ -70,7 +70,7 @@ function Login() {
             />
             <Navbar />
             <RenderLogin />
-            <div classNameName="flex-grow bg-white"></div>
+            <div className="flex-grow bg-white"></div>
             <Footer />
         </div>
     );
