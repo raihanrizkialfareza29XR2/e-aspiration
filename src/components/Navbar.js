@@ -1,11 +1,14 @@
 import React from 'react';
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { FaRegArrowAltCircleRight, FaSun, FaMoon } from "react-icons/fa";
+import { ThemeContext } from './ThemeContext';
 import { Link } from "react-router-dom";
 
 function Navbar() {
+    const { theme, setTheme } = React.useContext(ThemeContext);
+
   return (
     <div>
-        <nav className="bg-red-600 border-gray-200 px-5 sm:px-36 py-4">
+        <nav className="bg-red-600 dark:bg-red-700 border-gray-200 px-5 sm:px-36 py-4">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
                 <Link to="/" className="flex">
                     <img src="/mpk.png" alt="Brand Logo" className="object-cover w-12 mr-2" />
@@ -36,30 +39,25 @@ function Navbar() {
                         <li>
                             <Link to="/login" className="flex items-center justify-center py-2 pr-4 pl-3 text-white hover:bg-red-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-300 md:p-0 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent">Login <FaRegArrowAltCircleRight className="ml-2" /></Link>
                         </li>
+                        <li>
+                            <div className="transition duration-500 ease-in-out rounded-full">
+                                {theme === 'dark' ? (
+                                    <FaSun
+                                        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                                        className="text-white dark:text-white text-lg cursor-pointer"
+                                    />
+                                ) : (
+                                    <FaMoon
+                                        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                                        className="text-white dark:text-white text-lg cursor-pointer"
+                                    />
+                                )}
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        {/* <header classNameName="text-gray-600 body-font bg-red-700">
-            <div classNameName="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <Link to="/" classNameName="flex title-font font-bold items-center text-white mb-4 md:mb-0">
-                    <img src="/mpk.png" alt="Logo Brand" classNameName="object-cover w-14" />
-                    <span classNameName="ml-3 text-xl uppercase">Tasis</span>
-                </Link>
-                <nav classNameName="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <Link to="#" classNameName="mr-5 hover:text-gray-900">First Link</Link>
-                    <Link to="#" classNameName="mr-5 hover:text-gray-900">Second Link</Link>
-                    <Link to="#" classNameName="mr-5 hover:text-gray-900">Third Link</Link>
-                    <Link to="#" classNameName="mr-5 hover:text-gray-900">Fourth Link</Link>
-                </nav>
-                <button classNameName="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" classNameName="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-                </button>
-            </div>
-        </header> */}
     </div>
   );
 }

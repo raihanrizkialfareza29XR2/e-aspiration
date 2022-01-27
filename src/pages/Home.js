@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 function Home() {
     const RenderHome = () => {
         return (
-            <div>
+            <div className="bg-white dark:bg-gray-200">
                 <h1>Home</h1>
             </div>
         );
