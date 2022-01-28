@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <div>
-        <nav className="bg-red-600 dark:bg-red-700 border-gray-200 px-5 sm:px-26 py-4">
+        <nav className="bg-red-600 dark:bg-red-700 border-gray-200 px-5 sm:px-26 py-4 fixed w-full z-10">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
                 <Link to="/" className="flex">
                     <img src="/mpk.png" alt="Brand Logo" className="object-cover w-12 mr-2" />
