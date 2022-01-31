@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     const RenderSteps = () => {
         return (
-            <section className="dark:bg-gray-800 dark:text-coolGray-100 px-5 md:px-20">
+            <section className="dark:bg-gray-200 dark:text-coolGray-100 px-5 md:px-20">
                 <div className="container mx-auto flex flex-col p-6">
                     <h2 className="py-4 text-3xl font-semibold text-center">Bagaimana Asripasi Diproses?</h2>
                     <div className="divide-y divide-coolGray-700">
@@ -20,7 +20,7 @@ function Home() {
                                 </svg>
                             </div>
                             <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                                <span className="text-xs tracking-wider uppercase dark:text-violet-400">Step 1</span>
+                                <span className="text-xs tracking-wider uppercase dark:text-gray-900">Step 1</span>
                                 <span className="text-xl font-bold md:text-2xl">Veritatis dolores</span>
                                 <span className="mt-4 dark:text-coolGray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
                             </div>
@@ -33,7 +33,7 @@ function Home() {
                                 </svg>
                             </div>
                             <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                                <span className="text-xs tracking-wider uppercase dark:text-violet-400">Step 2</span>
+                                <span className="text-xs tracking-wider uppercase dark:text-gray-900">Step 2</span>
                                 <span className="text-xl font-bold md:text-2xl">Iure incidunt labore</span>
                                 <span className="mt-4 dark:text-coolGray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
                             </div>
@@ -46,7 +46,7 @@ function Home() {
                                 </svg>
                             </div>
                             <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                                <span className="text-xs tracking-wider uppercase dark:text-violet-400">Step 3</span>
+                                <span className="text-xs tracking-wider uppercase dark:text-gray-900">Step 3</span>
                                 <span className="text-xl font-bold md:text-2xl">Dolorem praesentium</span>
                                 <span className="mt-4 dark:bg-coolGray-800 dark:text-coolGray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
                             </div>
@@ -60,7 +60,7 @@ function Home() {
                                 </svg>
                             </div>
                             <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
-                                <span className="text-xs tracking-wider uppercase dark:text-violet-400">Step 4</span>
+                                <span className="text-xs tracking-wider uppercase dark:text-gray-900">Step 4</span>
                                 <span className="text-xl font-bold md:text-2xl">Explicabo eaque</span>
                                 <span className="mt-4 dark:text-coolGray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis, voluptates error alias dolorem praesentium sit soluta iure incidunt labore explicabo eaque, quia architecto veritatis dolores, enim cons equatur nihil ipsum.</span>
                             </div>
@@ -79,21 +79,21 @@ function Home() {
                         <h2 class="text-gray-800 text-2xl lg:text-3xl font-semibold text-center mb-4 md:mb-6">Jumlah Aspirasi Saat Ini</h2>
                     </div>
 
-                    <div class="grid grid-cols-3 md:grid-cols-3 md:divide-x gap-8 md:gap-0">
+                    <div class="grid grid-cols-2 md:grid-cols-2 md:divide-x gap-8 md:gap-0">
                         <div class="flex flex-col items-center md:p-4">
-                        <div class="text-red-600 dark:text-red-700 text-xl sm:text-2xl md:text-3xl font-bold">200</div>
-                        <div class="text-sm sm:text-base font-semibold">People</div>
-                    </div>
+                            <div class="text-red-600 dark:text-red-700 text-xl sm:text-2xl md:text-3xl font-bold">200</div>
+                            <div class="text-sm sm:text-base font-semibold">Aspirasi</div>
+                        </div>
 
-                    <div class="flex flex-col items-center md:p-4">
-                        <div class="text-red-600 dark:text-red-700 text-xl sm:text-2xl md:text-3xl font-bold">500+</div>
-                        <div class="text-sm sm:text-base font-semibold">People</div>
-                    </div>
+                        <div class="flex flex-col items-center md:p-4">
+                            <div class="text-red-600 dark:text-red-700 text-xl sm:text-2xl md:text-3xl font-bold">500+</div>
+                            <div class="text-sm sm:text-base font-semibold">Siswa</div>
+                        </div>
 
-                    <div class="flex flex-col items-center md:p-4">
+                    {/* <div class="flex flex-col items-center md:p-4">
                         <div class="text-red-600 dark:text-red-700 text-xl sm:text-2xl md:text-3xl font-bold">1000+</div>
                         <div class="text-sm sm:text-base font-semibold">Customers</div>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ function Home() {
 
     const RenderReview = () => {
         return (
-            <div class="bg-white py-6 sm:py-8 lg:py-12 px-5 md:px-20">
+            <div class="bg-white dark:bg-gray-200 py-6 sm:py-8 lg:py-12 px-5 md:px-20">
             <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                 <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-8 xl:mb-12">Apa Kata Mereka?</h2>
 
